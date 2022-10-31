@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Курсовая работа (ksv)</title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="body">
+
+	<header class="header">
+		<div class="container header__inner">
+			<div class="flex-start">
+				<a class="logo" href="#">
+					<svg class="logo__pic" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32px"
+						height="32px">
+						<path
+							d="M 3.5898438 3 L 8.734375 8.484375 L 3 7.5644531 L 11.328125 13.806641 L 7.1699219 14.339844 L 16 17 L 15 18 L 21.570312 16.787109 L 20.818359 20.261719 L 17.935547 22.876953 L 13.451172 25.171875 L 12.400391 24.515625 L 12.050781 24.794922 L 11 28.533203 L 11.328125 28.462891 L 12.486328 27.039062 L 15.326172 25.171875 L 20.023438 23.845703 L 16.636719 25.806641 C 16.636719 25.806641 15.711469 25.769531 15.605469 25.769531 C 15.499469 25.769531 14.619141 29 14.619141 29 L 15.105469 28.796875 L 15.496094 28.1875 L 16.396484 26.943359 L 20.412109 25.023438 L 23.261719 21.595703 L 25.283203 17.615234 L 26.558594 15.376953 L 26.558594 13.953125 L 26.345703 12.53125 L 25.8125 11.318359 L 26.335938 10.292969 L 27 9.9160156 L 26.568359 9.3046875 L 26.923828 8.9902344 L 26.339844 8.7773438 L 24.855469 7.5234375 L 22.935547 8.0507812 L 22.722656 9.9707031 L 23.789062 10.804688 L 23.179688 11.255859 L 17.695312 6.3613281 L 19.875 9.1953125 L 10 3 L 12.304688 7.28125 L 14.822266 8.1992188 L 13.873047 6.25 L 21.150391 11.277344 L 14.832031 7.4980469 L 16.433594 9.4296875 L 3.5898438 3 z" />
+					</svg>
+				</a>
+				<div class="flex-column">
+					<h1 class="header__title">
+						Курсовая работа
+					</h1>
+					<p class="header__subtitle">
+						Курс JavaScript Essential
+					</p>
+				</div>
+
+			</div>
+			<nav class="menu">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a class="menu__link" href="#taskOne">
+							Задание 1
+						</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#taskTwo">
+							Задание 2
+						</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#taskThree">
+							Задание 3
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+
+	<main>
+
+		<section class="task-one section" id="taskOne">
+			<div class="container">
+				<h2 class="title">
+					Задание 1
+				</h2>
+				<p class="section__text ">
+					Создайте функцию, которая будет определять является ли введенная пользователем строка палиндромом.
+					Палиндром - число, буквосочетание, слово или текст слева направо и справа налево читается одинаково. Например,
+					707, топот, оно, мадам и т.д.
+				</p>
+				<div class="flex-space-between">
+					<h3 class="subtitle">
+						Решение задания 1
+					</h3>
+					<div class="flex-start">
+						<button class="btn task-one__btn" type="button">Выполнить</button>
+						<button class="btn task-one__button" type="button">Показать скриншот</button>
+					</div>
+				</div>
+				<div class="task-one__group">
+					<label class="task-one__label" for="palindrome">Проверка палиндрома</label>
+					<input class="task-one__field" type="text" name="palindrome" id="palindrome"
+						placeholder="введите строку палиндрома" value="">
+				</div>
+				<div class="task-one__solution"></div>
+				<img class="task-one__pic" src="images/solution1.jpeg" alt="#">
+			</div>
+		</section>
+
+		<section class="task-two section" id="taskTwo">
+			<div class="container">
+				<h2 class="title">
+					Задание 2
+				</h2>
+				<p class="section__text">
+					Напишите функцию, которая сравнивает две строки и определяет являются ли они анаграммой (слова состоят из
+					одних и тех же
+					букв). Строки получаем от пользователя с помощью 2-х методов prompt.
+				<pre>
+					Пример:
+					Первое слово - апельсин
+					Второе слово - спаниель
+					Результат - слова "апельсин" и "спаниель" являются анаграммой.
+					</pre>
+				</p>
+				<div class="flex-space-between">
+					<h3 class="subtitle">
+						Решение задания 2
+					</h3>
+					<div class="flex-start">
+						<button class="btn task-two__btn" type="button">Выполнить</button>
+						<button class="btn task-two__button" type="button">Показать скриншот</button>
+					</div>
+				</div>
+				<div class="flex-space-around">
+					<div class="task-two__group">
+						<label class="task-two__label" for="word-a">Первая строка</label>
+						<input class="task-two__field str-a" type="text" name="word-a" id="word-a" placeholder="введите текст"
+							value="атлас">
+					</div>
+					<div class="task-two__group">
+						<label class="task-two__label" for="word-b">Вторая строка</label>
+						<input class="task-two__field str-b" type="text" name="word-b" id="word-b" placeholder="введите текст"
+							value="салат">
+					</div>
+				</div>
+				<div class="task-two__solution"></div>
+				<img class="task-two__pic" src="images/solution2.jpeg" alt="#">
+
+			</div>
+		</section>
+
+		<section class="task-three section" id="taskThree">
+			<div class="container">
+				<h2 class="title">
+					Задание 3
+				</h2>
+				<p class="section__text">
+					Игра «Как стать миллионером».
+					Подумайте, как можно реализовать подобный сценарий с использованием массивов и объектов. Помните, что для
+					каждого вопроса нужно прописать: вопрос, 4 варианта ответа, правильный ответ (который будем сравнивать с тем,
+					что ввел пользователь, сумма которую выиграл пользователь). Определите минимум 5 вопросов. Вопросы с
+					вариантами ответов вы можете придумать самостоятельно, а можете воспользоваться поиском
+				</p>
+
+				<div class="flex-space-between">
+					<h3 class="subtitle">
+						Решение задания 3
+					</h3>
+					<div class="flex-start">
+						<button class="btn task-three__btn" type="button">Выполнить</button>
+						<button class="btn task-three__button" type="button">Показать скриншот</button>
+					</div>
+				</div>
+
+				<form class="quiz-form" action="#">
+					<p class="quiz-form__title">Вопрос №</p>
+					<p class="quiz-form__text">Кто?</p>
+					<p class="quiz-form__prize">ваш приз:</p>
+					<ol class="quiz-form__list">
+						<li class="quiz-form__item">
+							<input class="quiz-form__radio-one" type="radio" name="answer" value="1">
+							<label class="quiz-form__label-one" for="">вариант1</label>
+						</li>
+						<li class="quiz-form__item">
+							<input class="quiz-form__radio-two" type="radio" name="answer" value="2">
+							<label class="quiz-form__label-two" for="">вариант2</label>
+						</li>
+						<li class="quiz-form__item">
+							<input class="quiz-form__radio-three" type="radio" name="answer" value="3">
+							<label class="quiz-form__label-three" for="">вариант3</label>
+						</li>
+						<li class="quiz-form__item">
+							<input class="quiz-form__radio-four" type="radio" name="answer" value="4">
+							<label class="quiz-form__label-four" for="">вариант4</label>
+						</li>
+					</ol>
+
+					<button class="btn quiz-form__btn" type="button">ок</button>
+
+				</form>
+
+				<form class="confirm-form" action="#">
+					<p class="confirm-form__title">Подтвердите действие</p>
+					<p class="confirm-form__text">Хотите продолжить игру?</p>
+					<div class="flex-start">
+						<button class="btn confirm-form__btn-ok" type="button">ок</button>
+						<button class="btn confirm-form__btn-no" type="button">отмена</button>
+					</div>
+				</form>
+
+				<form class="game-over" action="#">
+					<p class="game-over__title">game</p>
+					<p class="game-over__title">over</p>
+					<p class="game-over__text">ваш приз</p>
+					<div class="flex-start">
+						<button class="btn game-over__btn-ok" type="button">ок</button>
+					</div>
+				</form>
+
+				<div class="task-three__solution"></div>
+				<img class="task-three__pic" src="images/solution3.jpeg" alt="#">
+
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<a class="footer__logo" href="#body">
+			<img class="footer__pic" src="images/ksv-photo.webp" alt="Логотип">
+			<!-- <span class="sr-only">Перейти на початок сторінки</span> -->
+		</a>
+	</footer>
+
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
